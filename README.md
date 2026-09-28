@@ -1,6 +1,7 @@
-Restaurante App - Semana 14
+Restaurante App - Semana 15
 
-Aplicación de escritorio desarrollada en **Python utilizando Tkinter**, orientada a la gestión básica de un restaurante mediante una interfaz gráfica.
+Aplicación desarrollada en Python con Tkinter aplicando Programación Orientada a Objetos,
+organización modular, manejo de eventos mediante command/callback y persistencia de ventas mediante archivos JSON.
 El proyecto permite administrar usuarios, productos y procesos internos utilizando archivos JSON como método de almacenamiento de datos.
 
 Descripción del proyecto
