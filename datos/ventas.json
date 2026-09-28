@@ -1,0 +1,14 @@
+[
+    {
+        "codigo": "V001",
+        "producto": "Producto",
+        "cantidad": "Cantidad",
+        "total": 0
+    },
+    {
+        "codigo": "V001",
+        "producto": "Hamburguesa",
+        "cantidad": "2",
+        "total": 0
+    }
+]
