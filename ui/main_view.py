@@ -1,17 +1,24 @@
 import tkinter as tk
 from tkinter import messagebox
+
 from modelos.venta import Venta
 from servicios.venta_servicio import VentaServicio
 
 
 class MainView:
+
     def __init__(self, root):
+
         self.root = root
         self.root.title("Restaurante App - Semana 15")
 
         self.servicio = VentaServicio()
 
-        tk.Label(root, text="Registro de ventas").pack()
+        titulo = tk.Label(
+            root,
+            text="Registro de ventas"
+        )
+        titulo.pack()
 
         self.usuario = tk.Entry(root)
         self.usuario.pack()
@@ -25,18 +32,21 @@ class MainView:
         self.cantidad.pack()
         self.cantidad.insert(0, "Cantidad")
 
-        tk.Button(
+        boton = tk.Button(
             root,
             text="Registrar venta",
             command=self.registrar_venta
-        ).pack()
+        )
+        boton.pack()
 
         self.lista = tk.Listbox(root)
         self.lista.pack()
 
+
     def registrar_venta(self):
+
         venta = Venta(
-            self.usuario.get(),
+            "V001",
             self.producto.get(),
             self.cantidad.get(),
             0
